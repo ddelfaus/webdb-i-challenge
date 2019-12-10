@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
     knex
       .select('*')
       .from('accounts')
-      .first()
+      
       .then(e => {
         res.status(200).json(e);
       })
